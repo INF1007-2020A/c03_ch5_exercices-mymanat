@@ -1,5 +1,5 @@
 test_factorial (__main__.TestExercice) ... ok
-test_prefixes (__main__.TestExercice) ... FAIL
+test_prefixes (__main__.TestExercice) ... ok
 test_summation (__main__.TestExercice) ... ERROR
 
 ======================================================================
@@ -8,30 +8,11 @@ ERROR: test_summation (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 33, in test_summation
     output = exercice.prime_integer_summation()
-  File "/home/runner/work/c03_ch5_exercices-mymanat/c03_ch5_exercices-mymanat/exercice.py", line 23, in prime_integer_summation
+  File "/home/runner/work/c03_ch5_exercices-mymanat/c03_ch5_exercices-mymanat/exercice.py", line 24, in prime_integer_summation
     while premier<=100:
 UnboundLocalError: local variable 'premier' referenced before assignment
-
-======================================================================
-FAIL: test_prefixes (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 20, in test_prefixes
-    'Mauvaise identification de la parité de la longueur de la chaine'
-AssertionError: Lists differ: ['n'] != ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack']
-
-First differing element 0:
-'n'
-'Jack'
-
-Second list contains 6 additional elements.
-First extra element 1:
-'Kack'
-
-- ['n']
-+ ['Jack', 'Kack', 'Lack', 'Mack', 'Nack', 'Oack', 'Pack'] : Mauvaise identification de la parité de la longueur de la chaine
 
 ----------------------------------------------------------------------
 Ran 3 tests in 0.001s
 
-FAILED (failures=1, errors=1)
+FAILED (errors=1)
