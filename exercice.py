@@ -30,11 +30,13 @@ def prime_integer_summation() -> int:
 
 
 def factorial(number: int) -> int:
-    if n>0:
-        while n>0:
-            c=n-1
-            n*=c
-    return 0
+    if number<=1:
+        number=1
+    else:
+        number*=factorial(number-1)
+        
+
+    return number
 
 
 def use_continue() -> None:
